@@ -1,0 +1,183 @@
+{
+  // ============================
+  // NEOVIM CONFIGURATION (macOS ARM)
+  // ============================
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.dotfiles/.config/nvim/init-vscode.lua",
+  "vscode-neovim.compositeTimeout": 200,
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape"
+    },
+  },
+  "vscode-neovim.ctrlKeysForNormalMode": [
+    "a",
+    "d",
+    "h",
+    "j",
+    "k",
+    "l",
+    "o",
+    "r",
+    "u",
+    "w",
+    "x",
+    "y",
+    "z"
+  ],
+  "vscode-neovim.ctrlKeysForInsertMode": [
+    "a",
+    "d",
+    "h",
+    "j",
+    "k",
+    "l",
+    "o",
+    "r",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+  ],
+  // ============================
+  // MINIMALIST INTERFACE IGOR BABKO
+  // ============================
+  "workbench.colorTheme": "Nord Deep",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+  "workbench.productIconTheme": "material-product-icons",
+  // Clean interface
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "single",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "window.commandCenter": false,
+  // Clean file tree
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 8,
+  "material-icon-theme.hidesExplorerArrows": true,
+  // ============================
+  // EDITOR
+  // ============================
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'SF Mono', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.letterSpacing": 0.3,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "relative",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.overviewRulerBorder": false,
+  // ============================
+  // TERMINAL
+  // ============================
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.lineHeight": 1.4,
+  // ============================
+  // NAVIGATION AND BREADCRUMBS
+  // ============================
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.folding": false,
+  // ============================
+  // OTHER OPTIMIZATIONS
+  // ============================
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onFocusChange",
+  "git.decorations.enabled": false,
+  "scm.diffDecorations": "none",
+  // ============================
+  // NEOVIM OPTIMIZATIONS
+  // ============================
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.parameterHints.enabled": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.hover.delay": 1000,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  // Search exclusions (matching your nvim telescope config)
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/*.lock": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/coverage": true,
+    "**/.vite": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.DS_Store": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/coverage": true
+  },
+  // ============================
+  // LANGUAGE SPECIFIC - VUE.JS & TYPESCRIPT
+  // ============================
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "vue.updateImportsOnFileMove.enabled": true,
+  "vue.inlayHints.missingProps": true,
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.optionsWrapper": true,
+  "vue.format.enable": true,
+  "vue.suggest.autoImports": true,
+  // Emmet for Vue
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // Auto formatting on save
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "window.zoomLevel": 0,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  // Custom zenmode
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "single",
+  "totalTypeScript.hiddenTips": [
+    "function-return-type"
+  ]
+}

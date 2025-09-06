@@ -1,0 +1,296 @@
+[
+  // ============================
+  // NAVIGATION STYLE NEOVIM
+  // ============================
+  {
+    "key": "space",
+    "command": "whichkey.show",
+    "when": "neovim.mode == normal && !whichkeyActive && !inQuickOpen"
+  },
+  // Navigation entre panneaux
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight",
+    "when": "neovim.mode == normal"
+  },
+  // ============================
+  // RACCOURCIS RAPIDES (macOS)
+  // ============================
+  {
+    "key": "cmd+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+shift+x",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  // ============================
+  // HARPOON NAVIGATION (optionnel)
+  // ============================
+  {
+    "key": "cmd+1",
+    "command": "vscode-harpoon.gotoEditor1"
+  },
+  {
+    "key": "cmd+2",
+    "command": "vscode-harpoon.gotoEditor2"
+  },
+  {
+    "key": "cmd+3",
+    "command": "vscode-harpoon.gotoEditor3"
+  },
+  {
+    "key": "cmd+4",
+    "command": "vscode-harpoon.gotoEditor4"
+  },
+  {
+    "key": "cmd+shift+a",
+    "command": "vscode-harpoon.addEditor"
+  },
+  {
+    "key": "cmd+shift+h",
+    "command": "vscode-harpoon.editorQuickPick"
+  },
+  // ============================
+  // NEOVIM CUSTOM MAPPINGS
+  // ============================
+  // File operations
+  {
+    "key": "space e w",
+    "command": "workbench.action.files.save",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space r",
+    "command": "workbench.action.files.revert",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // Window splits
+  {
+    "key": "s w",
+    "command": "workbench.action.closeOtherEditors",
+    "when": "neovim.mode == normal"
+  },
+  // Buffer navigation (Shift+h/l)
+  {
+    "key": "shift+h",
+    "command": "workbench.action.previousEditor",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "shift+l",
+    "command": "workbench.action.nextEditor",
+    "when": "neovim.mode == normal"
+  },
+  // File explorer (- key for Oil equivalent)
+  {
+    "key": "-",
+    "command": "workbench.view.explorer",
+    "when": "neovim.mode == normal && !explorerViewletFocus"
+  },
+  {
+    "key": "-",
+    "command": "list.focusParent",
+    "when": "neovim.mode == normal && explorerViewletFocus"
+  },
+  // Terminal shortcuts
+  {
+    "key": "space t y",
+    "command": "workbench.action.positionPanelRight",
+    "when": "panelPosition == 'bottom'"
+  },
+  {
+    "key": "space t h", 
+    "command": "workbench.action.positionPanelBottom",
+    "when": "panelPosition == 'right'"
+  },
+  // {
+  //   "key": "space t h",
+  //   "command": "workbench.action.terminal.split",
+  //   "when": "neovim.mode == normal && !whichkeyActive"
+  // },
+  // {
+  //   "key": "space t y",
+  //   "command": "workbench.action.createTerminalEditor",
+  //   "when": "neovim.mode == normal && !whichkeyActive"
+  // },
+  {
+    "key": "space t t",
+    "command": "workbench.action.terminal.new",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space t f",
+    "command": "workbench.action.terminal.focus",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space t x",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "neovim.mode == normal"
+  },
+  // Clear search highlights
+  {
+    "key": "space n h",
+    "command": "removeSecondaryCursors",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // Telescope equivalents (file search)
+  {
+    "key": "space f f",
+    "command": "workbench.action.quickOpen",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space f g",
+    "command": "workbench.action.findInFiles",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space f s",
+    "command": "workbench.action.findInFiles",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space f r",
+    "command": "workbench.action.openRecent",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space f b",
+    "command": "workbench.action.showAllEditors",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space f t",
+    "command": "workbench.action.findInFiles",
+    "when": "neovim.mode == normal && !whichkeyActive",
+    "args": {
+      "query": "TODO|FIXME|HACK|BUG|NOTE"
+    }
+  },
+  {
+    "key": "space f w",
+    "command": "workbench.action.findInFiles",
+    "when": "neovim.mode == normal && !whichkeyActive",
+    "args": {
+      "query": "${selectedText}"
+    }
+  },
+  // LazyGit equivalent
+  {
+    "key": "space l g",
+    "command": "workbench.view.scm",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // LSP mappings - handled by Neovim config instead
+  {
+    "key": "space c a",
+    "command": "editor.action.quickFix",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space r n",
+    "command": "editor.action.rename",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // Format buffer (space ll)
+  {
+    "key": "space l l",
+    "command": "editor.action.formatDocument",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // Window resizing (Ctrl+Shift combinations)
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.increaseViewHeight",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.decreaseViewHeight",
+    "when": "neovim.mode == normal"
+  },
+  // ============================
+  // VUE.JS SPECIFIC MAPPINGS
+  // ============================
+  {
+    "key": "space v d",
+    "command": "extension.volar.action.showOutputChannel",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space v r",
+    "command": "extension.volar.action.restartServer",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space v t",
+    "command": "extension.volar.action.showTypeScript",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // ============================
+  // TYPESCRIPT SPECIFIC MAPPINGS
+  // ============================
+  {
+    "key": "space t r",
+    "command": "typescript.removeUnusedImports",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space t o",
+    "command": "typescript.organizeImports",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space t i",
+    "command": "typescript.addMissingImports",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // ============================
+  // DIAGNOSTICS & PROBLEMS
+  // ============================
+  {
+    "key": "space x x",
+    "command": "workbench.actions.view.problems",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space x w",
+    "command": "workbench.action.problems.focus",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+]
