@@ -114,6 +114,7 @@
   "editor.hover.delay": 1000,
   "editor.semanticHighlighting.enabled": false,
   "editor.bracketPairColorization.enabled": false,
+  "editor.lightbulb.enabled": false,
   // Search exclusions (matching your nvim telescope config)
   "search.exclude": {
     "**/node_modules": true,
