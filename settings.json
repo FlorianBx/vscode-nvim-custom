@@ -8,7 +8,7 @@
   "vscode-neovim.compositeKeys": {
     "jj": {
       "command": "vscode-neovim.escape"
-    },
+    }
   },
   "vscode-neovim.ctrlKeysForNormalMode": [
     "a",
@@ -65,10 +65,10 @@
   // EDITOR
   // ============================
   "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'SF Mono', monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 1.6,
-  "editor.letterSpacing": 0.3,
+  "editor.lineHeight": 2,
+  "editor.letterSpacing": 0.5,
   "editor.wordWrap": "on",
   "editor.lineNumbers": "relative",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -83,7 +83,7 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "'JetBrains Mono'",
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.lineHeight": 1.4,
+  "terminal.integrated.lineHeight": 2,
   // ============================
   // NAVIGATION AND BREADCRUMBS
   // ============================

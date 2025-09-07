@@ -95,6 +95,21 @@
   },
   // Window splits
   {
+    "key": "space s h",
+    "command": "workbench.action.splitEditorDown",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space s v",
+    "command": "workbench.action.splitEditorRight",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
+    "key": "space s x",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
     "key": "s w",
     "command": "workbench.action.closeOtherEditors",
     "when": "neovim.mode == normal"
