@@ -57,7 +57,6 @@
   "window.commandCenter": false,
   // Clean file tree
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.tree.enableStickyScroll": false,
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 8,
   "material-icon-theme.hidesExplorerArrows": true,
@@ -81,7 +80,7 @@
   // TERMINAL
   // ============================
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 2,
   // ============================
@@ -114,7 +113,7 @@
   "editor.hover.delay": 1000,
   "editor.semanticHighlighting.enabled": false,
   "editor.bracketPairColorization.enabled": false,
-  "editor.lightbulb.enabled": false,
+  "editor.lightbulb.enabled": "off",
   // Search exclusions (matching your nvim telescope config)
   "search.exclude": {
     "**/node_modules": true,
