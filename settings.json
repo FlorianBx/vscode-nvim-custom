@@ -178,6 +178,7 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.showTabs": "single",
   "totalTypeScript.hiddenTips": [
-    "function-return-type"
+    "function-return-type",
+    "as-const"
   ]
 }

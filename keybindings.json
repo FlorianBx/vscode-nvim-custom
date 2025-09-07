@@ -84,6 +84,11 @@
     "when": "neovim.mode == normal && !whichkeyActive"
   },
   {
+    "key": "space e e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  {
     "key": "space r",
     "command": "workbench.action.files.revert",
     "when": "neovim.mode == normal && !whichkeyActive"
@@ -221,6 +226,12 @@
   {
     "key": "space l l",
     "command": "editor.action.formatDocument",
+    "when": "neovim.mode == normal && !whichkeyActive"
+  },
+  // Copilot Chat toggle
+  {
+    "key": "space c c",
+    "command": "workbench.action.toggleAuxiliaryBar",
     "when": "neovim.mode == normal && !whichkeyActive"
   },
   // Window resizing (Ctrl+Shift combinations)
